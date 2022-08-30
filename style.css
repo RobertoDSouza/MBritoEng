@@ -20,6 +20,15 @@ header{
     width: 100%;
     background-color: black;
     color: white;
+    position: sticky;
+    top: 0;
+   
+}
+.top li{
+    transition: 0.2s ease-in-out;
+}
+.top li:hover{
+    transform: scale(1.05);
 }
 .list1,.list2{
     display: flex;
@@ -66,7 +75,7 @@ header  ul>img{
     left: 12%;
     height: 6rem;
 }
-header ul li:hover{
+header .menu li:hover{
     transform: scale(1.1);
 }
 .carousel.slide{
@@ -305,7 +314,19 @@ footer{
     height: 550px;
     padding: 0 10px;
 }
-
+.textcontato a{
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 16px;
+}
+.textcontato a:visited,.textcontato a:link,
+.textcontato a:active{
+    color: white;
+}
+.textcontato a:hover{
+    color:rgba(14, 62, 40, 0.651);
+}
 form {
     font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
