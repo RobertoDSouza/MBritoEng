@@ -114,7 +114,7 @@ header .menu li:hover{
     width: 100vw;
     display: block;
     padding-top: 50px;
-    background-image: url(/acets/fundo.png);
+    background-image: url(acets/fundo.png);
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
@@ -150,7 +150,7 @@ header .menu li:hover{
     height: 340px;
     justify-content: space-around;
     width: 100vw;
-    background-image:url(/acets/etica.png) ;
+    background-image:url(acets/etica.png) ;
     background-repeat:no-repeat;
     background-size: cover;
     align-items: center;
@@ -267,7 +267,7 @@ header .menu li:hover{
     font-size: 40px;
 }
 .orgo{
-    background-image: url(/acets/fundotime.png);
+    background-image: url(acets/fundotime.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
