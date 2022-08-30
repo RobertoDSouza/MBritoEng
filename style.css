@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    overflow-x:hidden;
+}
+
+header{
+    display: block;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+}
+.top{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.list1,.list2{
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+}
+.list1{
+    position: absolute;
+    left: 10%;
+}
+.list2{
+    position: absolute;
+    right: 10%;
+}
+.list1 li{
+    padding: 0 10px;
+}
+.list2 li{
+    padding: 0 5px;
+}
+header .menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(14, 62, 40);
+}
+header .menu li{
+    left: 10%;
+    position: relative;
+    padding: 0 15px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+header  ul>img{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 12%;
+    height: 6rem;
+}
+header ul li:hover{
+    transform: scale(1.1);
+}
+.carousel.slide{
+    height: 100%;
+    width: 100vw;
+}
+
+
+.carousel-caption.d-none.d-md-block{
+    bottom: 30%;
+}
+.carousel-caption.d-none.d-md-block h2{
+    font-size: 80px;
+    padding-bottom: 5px;
+    text-shadow: 
+    0 0 51px rgb(0, 0, 0),
+    0 0 81px rgb(0, 0, 0);
+}
+.carousel-caption.d-none.d-md-block button{
+    border: none;
+    border-radius: 20px;
+    width: 16rem;
+    height: 4rem;
+    font-size: 20px;
+    background-color: rgba(14, 62, 40, 0.651);
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.carousel-caption.d-none.d-md-block button:hover{
+    transform: scale(1.05);
+}
+.about{
+    height: auto;
+    width: 100vw;
+    display: block;
+    padding-top: 50px;
+    background-image: url(/acets/fundo.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-text{
+    display: flex;
+    height: 600px;
+    width: 1200px;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+.text{
+    display: block;
+    width: 400px;
+    margin-top: 40px;
+    
+}
+.text h2{
+    padding-bottom: 20px;
+    border-top: 2px rgba(14, 62, 40, 0.651) solid;
+}
+.text p{
+    font-size: 18px;
+}
+.container-text img{
+    padding-top: 40px;
+    max-height: 500px;
+    max-width: 500;
+    
+}
+.container-text-full{
+    display: flex;
+    height: 340px;
+    justify-content: space-around;
+    width: 100vw;
+    background-image:url(/acets/etica.png) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+.text-full{
+    display: block;
+    text-align: center;
+    height: 320px ;
+    width: 600px;
+    padding: 10px; 
+    color:rgb(14, 62, 40);
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur(  5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}          
+
+.services{
+    width: 100vw;
+    height: auto;
+}
+.services h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mini-cards{
+    margin: 0 auto;
+    width: 960px;
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mini-cards .mini{
+    list-style: none;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+.mini h4{
+    padding-top: 20px;
+}
+.mini svg{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    animation: pisca 3s infinite;
+}
+@keyframes pisca{
+    0%{
+        color: black;
+    }
+    
+    50%{
+        color:rgb(5, 201, 112);
+    }
+    100%{
+        color: black;
+    }
+}
+
+.mini svg:hover{
+    transform: scale(1.1);
+}
+.cards{
+    height: auto;
+    width: 100vw;
+    display: block;
+}
+.containercards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: auto;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card {
+   padding: 5px;
+    border: none;
+}
+.titulo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 200px;
+}
+.card-img{
+    height: 350px;
+    width: auto;
+   border: none;
+   transition: 0.2s ease-in-out;
+}
+.card-img:hover{
+    transform: scale(1.05);
+    z-index: 99;
+}
+
+.time{
+    width: 100vw;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+.time h2{
+    padding-top:50px ;
+    font-size: 40px;
+}
+.orgo{
+    background-image: url(/acets/fundotime.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.orgo .card{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur(  5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 5px;
+    color: white;
+}
+.timecard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}
+footer{
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+.contato{
+    height: 650px;
+    background-color: rgba(14, 62, 40, 0.651);
+    text-align: center;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.textcontato{
+    width: 400px;
+    height: 550px;
+    padding: 0 10px;
+}
+
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur(  5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 5px;
+    width: 300px;
+    height: 550px;
+}
+
+form>h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 280px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    background-color: #e0e0e0;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: #ffffff;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 280px;
+    height: 200px;
+    line-height: 20px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer h2{
+    text-align: center;
+    padding-top:20px ;
+    font-size: 40px;
+}
+.dev{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.dev li, .dev a,.dev a:visited,.dev a:active,
+.dev a:link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+.dev li:hover,.dev a:hover{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 255, 255),
+    0 0 92px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255),
+    0 0 151px rgb(255, 255, 255);
+}
+.dev h4{
+    color: white;
+    padding-right: 10px;
+}
+.dev>h4,.dev>li{
+    padding-top: 25px;
+    font-size: 15px;
+    padding-right: 8px;
+}
