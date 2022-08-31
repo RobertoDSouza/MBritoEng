@@ -14,47 +14,13 @@ header{
     width: 100vw;
     align-items: center;
 }
-.top{
-    display: flex;
-    height: 40px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0;
-   
-}
-.top li{
-    transition: 0.2s ease-in-out;
-}
-.top li:hover{
-    transform: scale(1.05);
-}
-.list1,.list2{
-    display: flex;
-    list-style: none;
-    padding-top: 5px;
-}
-.list1{
-    position: absolute;
-    left: 10%;
-}
-.list2{
-    position: absolute;
-    right: 10%;
-}
-.list1 li{
-    padding: 0 10px;
-}
-.list2 li{
-    padding: 0 5px;
-}
+
 header .menu{
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 100px;
     width: 100%;
     background-color: rgb(14, 62, 40);
 }
@@ -114,7 +80,7 @@ header .menu li:hover{
     width: 100vw;
     display: block;
     padding-top: 50px;
-    background-image: url(/acets/fundo.png);
+    background-image: url(acets/fundo.png);
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
@@ -147,13 +113,14 @@ header .menu li:hover{
 }
 .container-text-full{
     display: flex;
-    height: 340px;
+    height: 500px;
     justify-content: space-around;
     width: 100vw;
-    background-image:url(/acets/etica.png) ;
+    background-image:url(acets/etica.png) ;
     background-repeat:no-repeat;
     background-size: cover;
     align-items: center;
+    background-attachment: fixed;
 }
 .text-full{
     display: block;
@@ -161,15 +128,15 @@ header .menu li:hover{
     height: 320px ;
     width: 600px;
     padding: 10px; 
-    color:rgb(14, 62, 40);
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur(  5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgb(255, 255, 255);
+    
 }          
 
+.text-full h2 , .text-full p{
+    text-shadow: 
+    0 0 51px rgb(0, 0, 0),
+    0 0 81px rgb(0, 0, 0);
+}
 .services{
     width: 100vw;
     height: auto;
@@ -260,24 +227,23 @@ header .menu li:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .time h2{
-    padding-top:50px ;
+    padding-top:80px ;
     font-size: 40px;
 }
 .orgo{
-    background-image: url(/acets/fundotime.png);
+    background-image: url(acets/fundotime.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 1200px;
-    display: flex;
+    height: auto;
+    display: block;
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
 }
 .orgo .card{
     background: rgba( 255, 255, 255, 0.15 );
@@ -288,12 +254,20 @@ header .menu li:hover{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 5px;
     color: white;
+    transition: 0.5s ease-in-out;
+}
+.orgo .card:hover{
+    transform: scale(1.05);
+    z-index: 99;
 }
 .timecard{
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
+
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     width: 100vw;
@@ -301,7 +275,7 @@ footer{
     display: block;
 }
 .contato{
-    height: 650px;
+    height: 500px;
     background-color: rgba(14, 62, 40, 0.651);
     text-align: center;
     color: white;
@@ -311,52 +285,47 @@ footer{
 }
 .textcontato{
     width: 400px;
-    height: 550px;
+    height: 400px;
     padding: 0 10px;
 }
 .textcontato a{
-    color: white;
+    
     cursor: pointer;
     transition: 0.2s ease-in-out;
     font-size: 16px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }
 .textcontato a:visited,.textcontato a:link,
 .textcontato a:active{
     color: white;
 }
 .textcontato a:hover{
-    color:rgba(14, 62, 40, 0.651);
+    transform: scale(1.1);
 }
 form {
     font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur(  5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 5px;
-    width: 300px;
-    height: 550px;
+    width: 380px;
+    height: 400px;
+    display: block;
 }
 
-form>h2 {
+form h2 {
     margin-bottom: 20px;
     margin-left: 20px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-input, textarea {
-    width: 280px;
+input, select {
+    width:350px;
+    height: 50px;
     padding: 10px;
     color: black;
-    margin-left: 20px;
-    margin-top: 10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border: 1px solid;
 }
 
 input:hover, textarea:hover, input:focus, textarea:focus {
@@ -367,27 +336,14 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 }
 
 .enviar {
-    background-color: #ffffff;
-    height: 40px;
-    width: 100px;
+    background-color: rgba(14, 62, 40, 0.651);
+    height: 50px;
+    width: 350px;
     font-weight: bold;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border: 1px solid;
-    color: black;
-}
-
-textarea {
-    width: 280px;
-    height: 200px;
-    line-height: 20px;
-}
-
-form label {
-    margin-left: 20px;
-    color: #FFFFFF;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 footer h2{
