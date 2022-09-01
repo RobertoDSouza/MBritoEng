@@ -22,14 +22,14 @@ header .menu{
     justify-content: center;
     height: 100px;
     width: 100%;
-    background-color: rgb(14, 62, 40);
+    background-color: rgb(224, 224, 224);
 }
 header .menu li{
-    left: 10%;
+    left: 15%;
     position: relative;
     padding: 0 15px;
     font-size: 22px;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 62, 40);
     transition: 0.2s ease-in-out;
     cursor: pointer;
     
@@ -38,7 +38,7 @@ header  ul>img{
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 12%;
+    left: 8%;
     height: 6rem;
 }
 header .menu li:hover{
@@ -246,13 +246,8 @@ header .menu li:hover{
     text-align: center;
 }
 .orgo .card{
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur(  5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 5px;
+    border: none;
+    background: transparent;
     color: white;
     transition: 0.5s ease-in-out;
 }
@@ -292,10 +287,9 @@ footer{
     
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    font-size: 16px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
 }
 .textcontato a:visited,.textcontato a:link,
 .textcontato a:active{
