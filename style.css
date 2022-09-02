@@ -106,10 +106,9 @@ header .menu li:hover{
     font-size: 18px;
 }
 .container-text img{
-    padding-top: 40px;
+    margin-top: 40px;
     max-height: 500px;
-    max-width: 500;
-    
+    border-radius: 20px;
 }
 .container-text-full{
     display: flex;
@@ -352,7 +351,6 @@ footer h2{
     background-color: black;
     list-style: none;
     text-decoration: none;
-    text-align: center;
     justify-content: center;
 }
 .dev li, .dev a,.dev a:visited,.dev a:active,
@@ -377,7 +375,7 @@ footer h2{
     padding-right: 10px;
 }
 .dev>h4,.dev>li{
-    padding-top: 25px;
+    padding-top: 20px;
     font-size: 15px;
     padding-right: 8px;
 }
