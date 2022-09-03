@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+ 
 }
+html, body { 
+    scroll-behavior: smooth
+  }
+
 body{
     
     overflow-x:hidden;
@@ -13,9 +19,10 @@ header{
     height: 100px;
     width: 100vw;
     align-items: center;
+    background-color: rgb(224, 224, 224);
 }
 
-header .menu{
+header .menuitem{
     display: flex;
     list-style: none;
     align-items: center;
@@ -24,6 +31,7 @@ header .menu{
     width: 100%;
     background-color: rgb(224, 224, 224);
 }
+
 header .menu li{
     left: 15%;
     position: relative;
@@ -43,6 +51,10 @@ header  ul>img{
 }
 header .menu li:hover{
     transform: scale(1.1);
+}
+.menu a, .menu a:visited,.menu a:active, .menu a:link{
+    color:  rgb(14, 62, 40);
+    text-decoration: none;
 }
 .carousel.slide{
     height: 100%;
@@ -80,8 +92,7 @@ header .menu li:hover{
     width: 100vw;
     display: block;
     padding-top: 50px;
-    background-image: url(acets/fundo.png);
-    background-repeat: repeat-y;
+    background-image: url(acets/fundo.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -107,7 +118,8 @@ header .menu li:hover{
 }
 .container-text img{
     margin-top: 40px;
-    max-height: 500px;
+    padding-bottom: 20px;
+    height: 500px;
     border-radius: 20px;
 }
 .container-text-full{
@@ -254,10 +266,14 @@ header .menu li:hover{
     transform: scale(1.05);
     z-index: 99;
 }
+.card{
+    height: 600px;
+    width: 320px;
+}
 .timecard{
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 800px;
 
     margin: 0 auto;
     align-items: center;
@@ -269,7 +285,7 @@ footer{
     display: block;
 }
 .contato{
-    height: 500px;
+    min-height: 500px;
     background-color: rgba(14, 62, 40, 0.651);
     text-align: center;
     color: white;
@@ -379,3 +395,160 @@ footer h2{
     font-size: 15px;
     padding-right: 8px;
 }
+@media (max-width:1300px){
+    .container-text{
+        width: 800px;
+    }
+    .about{
+        background-image: url(acets/fundo-mob.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .container-text img{
+        height: 350px;
+    }
+    .containercards{
+        width: 1000px;
+    }
+}
+@media (max-width:1150px){
+    .menu  img{
+        height: 4rem;
+        left: 4%;
+    }
+    .carousel-caption.d-none.d-md-block h2{
+        font-size: 60px;
+    }
+    .containercards{
+        width: 800px;
+
+    }
+    .mini-cards{
+        width: 800px;
+        height: auto;
+    }
+}
+.menu button{
+    border: none;
+    height: 40px;
+    width: 40px;
+    display:none ;
+}
+@media(max-width:850px){
+    header{
+        margin-top: -20px;
+        position:sticky;
+        top: 0px;
+        z-index: 9999;
+    }
+    header img{
+        top:10px ;
+    }
+    .carousel.slide{
+       
+    }
+    .carousel-caption.d-none.d-md-block{
+        bottom: -5%;
+    }   
+    .menu button{
+        border: none;
+        background-color: transparent;
+        display: block;
+        position:absolute;
+        right: 120px;
+        top: 20px;
+    }
+    .menu .menuitem {
+        display:none;
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding-right: 180px;
+        top: 80px;right: 0px;
+        height: 180px;
+        z-index: 999;
+        color: rgb(14, 62, 40);
+        background-color: rgb(224, 224, 224);
+    }
+    .menu .menuitem.active {
+        display: flex;
+    }
+    .container-text{
+        display: block;
+        width: 100vw;
+        height: auto;
+        
+    }    
+    .about{
+        background-image: none;
+    }
+    .container-text img{
+        width: 100vw;
+        height: auto;
+    }
+    .text-full{
+        width: 100%;
+    }
+    
+    form{
+        margin: 0 auto;
+        width: 300px;
+    }
+    .textcontato{
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+    }
+    input,select,.enviar{
+        width: 300px;
+    }
+    
+    .container-text .text{
+        margin: 0 auto;
+    }
+    .containercards{
+        width:100vw;
+
+    }
+    .mini-cards{
+        width: 320px;
+        height: auto;
+    }
+    .time{
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    .time h2{
+        font-size: 22px;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .timecard{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .time .card-group{
+        display: block;
+        flex-wrap: wrap;
+        width: 100vw;
+        padding: 0;
+        margin: 0 ;
+    }
+    footer{
+        height: auto;
+    }
+    footer .contato{
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 890px;
+    }
+}  

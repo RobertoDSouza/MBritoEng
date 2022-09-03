@@ -11,66 +11,74 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>Muniz Brito Engenharia</title>
+    <link rel="icon" type="image/x-icon" href="acets/favico.png">
 </head>
 <body>
     
     <header>
         
-        <ul class="menu">
+        <ul class="menu" >
+            <button id="btnmobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
             <img src="acets/log.jpeg" alt="MBRITO Engenharia">
-            <li>Home</li>
-            <li>Sobre Nós</li>
-            <li>Serviços</li>
-            <li>Responsáveis</li>
-            <li>Contato</li>
+        <ul class="menuitem" id="men">
+            <li><a href=""> Home</a></li>
+            <li><a href="#sobre"> Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#resp">Responsáveis</a></li>
+            <li><a href="#conts">Contato</a></li>
+        </ul>
         </ul>
     </header>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="acets/imgcar.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Construção e<br> Manutenção Civil</h2>
-                  <button>Entre em Contato</button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="acets/canos.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Tubulação <br>de Gás</h2> 
-                  <button>Entre em Contato</button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="acets/maq.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Inspeção de <br>Máquinas e Equipamentos</h2> 
-                  <button>Entre em Contato</button>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+
     
 
-    <section class="about">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="acets/imgcar.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Construção e<br> Manutenção Civil</h2>
+              <a href="#conts"><button> Entre em Contato</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="acets/canos.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tubulação <br>de Gás</h2> 
+              <a href="#conts"><button> Entre em Contato</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="acets/maq.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Inspeção de <br>Máquinas e Equipamentos</h2> 
+              <a href="#conts"><button> Entre em Contato</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-        <div class="container-text">
+
+    <section id="sobre" class="about">
+
+        <div class="container-text ">
+            <img src="acets/saymon.jpeg" alt="">
             <div class="text">
             <h2>PERFIL DA EMPRESA</h2>
-            <p>A empresa foi fundada em 2014 e teve como sua primeira Razão Social o
+            <p style="font-size: 16px;">A empresa foi fundada em 2014 e teve como sua primeira Razão Social o
                 nome BRUMON SERVIÇOS DE ENGENHARIA LTDA., com o foco em
                 construções de termoelétrica e Construção de redes de distribuição de derivados
                 de petróleo. Com a pandemia em 2020 a empresa migrou para área de
@@ -84,7 +92,7 @@
                 responsáveis técnicos.
                 </p>
             </div>
-            <img src="acets/saymon.jpeg" alt="">
+            
         </div>
 
         <div class="container-text"> 
@@ -114,8 +122,8 @@
         
 
         <div class="container-text">
+            <img src="acets/valores.jpg" alt="">
             <div class="text">
-
                 <h2>VALORES</h2>
                 <p style="font-size: 20px;">
                     • Transparência<br><br>
@@ -124,7 +132,6 @@
                     • Integridade<br><br>
                     • Inovação<br><br>
                     </p></div>
-                <img src="acets/valores.jpg" alt="">
             </div>
 
             
@@ -141,7 +148,7 @@
         </div>    
     </section>
 
-    <section class="services">
+    <section class="services" id="servicos">
         <h2 style="padding-top: 50px;padding-bottom: 50px;"> Nossos Serviços</h2>
         <div class="mini-cards">
             <li class="mini">
@@ -263,53 +270,69 @@
             </div>
         </div>
     </section>
-    <section class="time">
+    <section class="time" id="resp">
         <h2>RESPONSÁVEIS TÉCNICOS</h2>
         <div class="orgo">
             <div class="timecard">
-
-                <div class="card"style="height: 350px;width: 320px;">
+                <div class="card-group">
+                <div class="card">
                     <img src="acets/say.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Saymon Muniz <br>Gerente de Projetos</h5>
+                        <h4 class="card-title">Saymon Muniz <br>Sócio Administrador </h4>
+                        <h5>Gerente de Projetos</h5>
                     </div>
                 </div>
-
+            </div>
                 <div class="card-group">
 
                     
-                    <div class="card" 
-                    style="height: 540px;width: 320px;">
-                    <img src="acets/carlos.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Carlos Guimaães</h5>
-                        <p>Mais de 45 anos de experiência com gerenciamento e supervisão de obras
-                            Engenheiro Civil - Universidade de Pernambuco (UPE)
-                            Vivência em mais de 10 empresas e diversos cursos de extensão</p>
+                    <div class="card" >
+                        <img src="acets/carlos.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Carlos Guimarães</h4>
+                                <h5>Responsável Técnico</h5>
+                                <p>Mais de 45 anos de experiência com gerenciamento e supervisão de obras
+                                    Engenheiro Civil - Universidade de Pernambuco (UPE)
+                                    Vivência em mais de 10 empresas e diversos cursos de extensão</p>
+                            </div>
                     </div>
-                </div>
 
-                    <div class="card"style="height: 540px;width: 320px;">
-                            <img src="acets/tiago.jpeg" class="card-img-top" alt="...">
+                    <div class="card">
+                        <img src="acets/tiago.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Tiago Alves </h5>
-                            <p><p>Mais de 10 anos de experiência com obras
+                            <h4>Tiago Alves </h4>
+                            <h5>Responsável Técnico</h5>
+                            <p>Mais de 10 anos de experiência com obras
                                 Engenheiro Mecânico - Universidade Federal da Bahia (UFBA)
                                 Especialista em Engenharia de Soldagem - Universidade de Pernambuco (UPE)
                                 MBA em Gerenciamento de Projetos - Fundação Getúlio Vargas (FGV)
-                                Mestrando em Engenharia Mecânica - Universidade de Taubaté (UNITAU)</p></p>
+                                Mestrando em Engenharia Mecânica - Universidade de Taubaté (UNITAU)</p>
                         </div>
                     </div>
-                    <div class="card"style="height:540px;width: 320px;">
-                        <img src="acets/aline.jpeg" class="card-img-top" alt="...">
+                </div>  
+
+                <div class="card-group">       
+                    <div class="card">
+                        <img src="acets/lucas.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5>Aline Muniz </h5>
-                        <p>Mais de 15 anos de experiência com obras
-                            Arquiteta e Urbanista - Universidade Federal da Bahia (UFBA)
-                            Especialista em Engenheira de Segurança do Trabalho - Universidade Federal da Bahia (UFBA)</p>
-                        
+                        <h4>Lucas Muniz </h4>
+                        <h5>Consultor Técnico</h5>
+                        <p>Doutorando em Engenharia Civil - Universidade Federal de Alagoas (UFAL)
+                            Vivência em Pesquisas e Projetos de estruturas de construção civil</p>
                     </div>
                 </div>
+
+                    <div class="card">
+                        <img src="acets/aline.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Aline Muniz </h4>
+                            <h5>Consultora Técnica</h5>
+                            <p>Mais de 15 anos de experiência com obras
+                                Arquiteta e Urbanista - Universidade Federal da Bahia (UFBA)
+                                Especialista em Engenheira de Segurança do Trabalho - Universidade Federal da Bahia (UFBA)</p>
+                            
+                        </div>
+                    </div>
 
                 </div>
 
@@ -317,8 +340,8 @@
         </div> 
     </section>
 
-    <footer>
-        <div class="contato">
+    <footer  id="conts">
+        <div class="contato" >
             <form name="meu_form">
 
                 <h2>Entre em contato</h2>
