@@ -6,7 +6,7 @@
  
 }
 html, body { 
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
   }
 
 body{
@@ -57,22 +57,25 @@ header .menu li:hover{
     text-decoration: none;
 }
 .carousel.slide{
-    height: 100%;
+    height: 100vh;
     width: 100vw;
 }
-
-
-.carousel-caption.d-none.d-md-block{
-    bottom: 30%;
+.d-block{
+    width: 100vw;
+    height: 100vh;
 }
-.carousel-caption.d-none.d-md-block h2{
+
+.carousel-caption.d-md-block{
+    bottom: 20%;
+}
+.carousel-caption.d-md-block h2{
     font-size: 80px;
     padding-bottom: 5px;
     text-shadow: 
     0 0 51px rgb(0, 0, 0),
     0 0 81px rgb(0, 0, 0);
 }
-.carousel-caption.d-none.d-md-block button{
+.carousel-caption.d-md-block button{
     border: none;
     border-radius: 20px;
     width: 16rem;
@@ -83,8 +86,13 @@ header .menu li:hover{
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-
-.carousel-caption.d-none.d-md-block button:hover{
+.menu button{
+    border: none;
+    height: 40px;
+    width: 40px;
+    display:none ;
+}
+.carousel-caption.d-md-block button:hover{
     transform: scale(1.05);
 }
 .about{
@@ -147,6 +155,12 @@ header .menu li:hover{
     text-shadow: 
     0 0 51px rgb(0, 0, 0),
     0 0 81px rgb(0, 0, 0);
+}
+.container-text-full h2{
+    font-size: 30px;
+}
+.container-text-full p{
+    font-size: 22px;
 }
 .services{
     width: 100vw;
@@ -395,7 +409,14 @@ footer h2{
     font-size: 15px;
     padding-right: 8px;
 }
-@media (max-width:1300px){
+@media(max-width:1601px)
+{
+    .d-block{
+        width: auto;
+    } 
+}
+@media (max-width:1400px){
+       
     .container-text{
         width: 800px;
     }
@@ -404,9 +425,13 @@ footer h2{
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        padding-top: 0;
     }
     .container-text img{
         height: 350px;
+    }
+    .container-text .text{
+        padding-left: 10px;
     }
     .containercards{
         width: 1000px;
@@ -414,12 +439,11 @@ footer h2{
 }
 @media (max-width:1150px){
     .menu  img{
-        height: 4rem;
-        left: 4%;
+        height: 4.5rem;
+        left: 20px;
+        top:10px;
     }
-    .carousel-caption.d-none.d-md-block h2{
-        font-size: 60px;
-    }
+    
     .containercards{
         width: 800px;
 
@@ -429,34 +453,47 @@ footer h2{
         height: auto;
     }
 }
-.menu button{
-    border: none;
-    height: 40px;
-    width: 40px;
-    display:none ;
-}
+
 @media(max-width:850px){
     header{
+        height: 85px;
         margin-top: -20px;
         position:sticky;
         top: 0px;
         z-index: 9999;
     }
-    header img{
-        top:10px ;
-    }
+    
     .carousel.slide{
-       
+      height: 600px;
     }
-    .carousel-caption.d-none.d-md-block{
-        bottom: -5%;
+    .carousel-caption.d-md-block h2{
+        font-size: 40px;
+    }
+    .carousel-caption.d-md-block{
+        bottom: 15%;
+        width: 300px;
+        margin: 0 auto;
     }   
+    .d-md-block{
+        display: block;
+    }
+    .d-none{
+        display: block;
+    }
+    .d-block{
+        height:630px;
+        width: auto;
+        
+    }
+    .carousel-control-next,.carousel-control-prev{
+        display: none;
+    }
     .menu button{
         border: none;
         background-color: transparent;
         display: block;
         position:absolute;
-        right: 120px;
+        right: 30px;
         top: 20px;
     }
     .menu .menuitem {
@@ -466,7 +503,7 @@ footer h2{
         text-align: center;
         align-items: center;
         font-size: 14px;
-        padding-right: 180px;
+        padding-right: calc(100px );
         top: 80px;right: 0px;
         height: 180px;
         z-index: 999;
@@ -474,25 +511,44 @@ footer h2{
         background-color: rgb(224, 224, 224);
     }
     .menu .menuitem.active {
-        display: flex;
+        display:block;
+        padding-top:8px ;
     }
     .container-text{
         display: block;
         width: 100vw;
         height: auto;
-        
+        margin: 0 auto;
+        text-align: center;
     }    
+    .container-text-full{
+        height: 600px;
+        background-position: center;
+        background-image:url(acets/eticamob.png) ;
+    }
+    .container-text-full h2{
+        font-size: 20px;
+    }
+    .container-text-full p{
+        font-size: 18px;
+        width: 280px;
+        text-align: center;
+        margin: 0 auto;
+    }
     .about{
         background-image: none;
     }
     .container-text img{
         width: 100vw;
         height: auto;
+        border-radius: 0;
     }
     .text-full{
         width: 100%;
     }
-    
+    .cards .titulo h2{
+        font-size: 20px;
+    }
     form{
         margin: 0 auto;
         width: 300px;
@@ -552,3 +608,9 @@ footer h2{
         height: 890px;
     }
 }  
+@media (max-width:402px){
+    .timecard,.text{
+        width: calc(100vw - 5px);
+    }
+    
+}
