@@ -471,15 +471,10 @@ footer h2{
     }
     .carousel-caption.d-md-block{
         bottom: 15%;
-        width: 300px;
-        margin: 0 auto;
+        display: block;
     }   
-    .d-md-block{
-        display: block;
-    }
-    .d-none{
-        display: block;
-    }
+    
+    
     .d-block{
         height:630px;
         width: auto;
