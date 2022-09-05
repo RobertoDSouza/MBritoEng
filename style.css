@@ -135,7 +135,7 @@ header .menu li:hover{
     height: 500px;
     justify-content: space-around;
     width: 100vw;
-    background-image:url(acets/etica.png) ;
+    background-image:url(acets/etica.jpg) ;
     background-repeat:no-repeat;
     background-size: cover;
     align-items: center;
@@ -518,7 +518,7 @@ footer h2{
     .container-text-full{
         height: 600px;
         background-position: center;
-        background-image:url(acets/eticamob.png) ;
+        background-image:url(acets/eticamob.jpg) ;
     }
     .container-text-full h2{
         font-size: 20px;
