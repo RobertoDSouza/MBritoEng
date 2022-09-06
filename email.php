@@ -14,7 +14,7 @@ $body = "Nome : ".$nome "\r\n".
         "Telefone: ".$fone. "\r\n".
         "Serviço: " .$select."\r\n";
 
-$header = "From:emaildodominio@gmail.com"."\r\n".
+$header = "From:email do dominio@gmail.com"."\r\n".
         "Reply-To:".$email. "\r\n".
         "X=Mailer:PHP/".phpversion();
 

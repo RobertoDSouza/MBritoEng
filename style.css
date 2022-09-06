@@ -151,11 +151,6 @@ header .menu li:hover{
     
 }          
 
-.text-full h2 , .text-full p{
-    text-shadow: 
-    0 0 51px rgb(0, 0, 0),
-    0 0 81px rgb(0, 0, 0);
-}
 .container-text-full h2{
     font-size: 30px;
 }
@@ -326,6 +321,10 @@ footer{
 }
 .textcontato a:hover{
     transform: scale(1.1);
+}
+.textcontato img{
+    height: 60px;
+    width: 60px;
 }
 form {
     font-family: Verdana,Tahoma,sans-serif;
@@ -516,7 +515,7 @@ footer h2{
         text-align: center;
     }    
     .container-text-full{
-        height: 600px;
+        height: 400px;
         background-position: center;
         background-image:url(acets/eticamob.jpg) ;
     }
@@ -591,6 +590,14 @@ footer h2{
     }
     footer{
         height: auto;
+    }
+    .textcontato a{
+        bottom: 30px;
+        right: 10px;
+    }
+    .textcontato a img{
+        height: 45px;
+        width: 45px;
     }
     footer .contato{
         display: block;
